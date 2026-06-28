@@ -1,0 +1,143 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* Tab menüye basınca yumuşak kayma sağlar */
+}
+
+body {
+    background-color: #fcf9f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Başlık Alanı */
+.menu-header {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.menu-header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #d4af37;
+}
+
+.menu-header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Sabit Üst Menü (Tab Menu) */
+.tab-menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    z-index: 100;
+}
+
+.tab-item {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 15px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.tab-item:hover, .tab-item:active {
+    background-color: #1a1a1a;
+    color: #d4af37;
+}
+
+/* Menü Gövdesi */
+.menu-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Kategoriler */
+.menu-category {
+    margin-bottom: 35px;
+    scroll-margin-top: 70px; /* Tab menünün altına girmemesi için boşluk */
+}
+
+.menu-category h2 {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Yan Yana Ürün Tasarımı (Flexbox) */
+.menu-item {
+    background: #fff;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex; /* Resim ve metni yan yana getirir */
+    gap: 15px; /* Aralarındaki boşluk */
+    align-items: center;
+}
+
+/* Ürün Resmi Ayarları */
+.item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Resmi ezmeden kare şeklinde kırpar */
+    border-radius: 8px;
+    background-color: #eee; /* Resim yüklenene kadar gri arka plan */
+}
+
+/* Ürün Metin Alanı */
+.item-details {
+    flex: 1; /* Kalan tüm boşluğu kapla */
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 3px;
+}
+
+.item-name {
+    color: #222;
+}
+
+.item-price {
+    color: #d4af37;
+    white-space: nowrap; /* Fiyatın alt satıra geçmesini engeller */
+}
+
+.item-desc {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Alt Bilgi */
+.menu-footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.8rem;
+    color: #888;
+}

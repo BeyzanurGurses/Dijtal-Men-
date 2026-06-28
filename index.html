@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dijital Menü</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Logo ve Başlık -->
+    <header class="menu-header">
+        <h1>LEZZET CAFE</h1>
+        <p>Dijital Menümüze Hoş Geldiniz</p>
+    </header>
+
+    <!-- Hızlı Geçiş Üst Menüsü (Tab Menü) -->
+    <nav class="tab-menu">
+        <!-- Mevcut butonlarınızın hemen altına bunları ekleyebilirsiniz -->
+        <a href="#ana-ogunler" class="tab-item">Ana Öğünler</a>
+        <a href="#ara-sicaklar" class="tab-item">Ara Sıcaklar</a>
+        <a href="#sicak-icecekler" class="tab-item">Sıcaklar</a>
+        <a href="#soguk-icecekler" class="tab-item">Soğuklar</a>
+
+        <a href="#tatlilar" class="tab-item">Tatlılar</a>
+    </nav>
+
+    <!-- Menü Alanı -->
+    <main class="menu-container">
+
+          <!-- YENİ KATEGORİ ŞABLONU -->
+<section id="ana-ogunler" class="menu-category">
+    <h2>Ana Öğünler</h2> <!-- YENİ ÜRÜN ŞABLONU -->
+<div class="menu-item">
+    <!-- Kategori Hamburgerler -->
+    <img src="resimler/chesseburger.jpeg" alt="chesseburger" class="item-img"> 
+    <div class="item-details">
+        <div class="item-info">
+            <span class="item-name"> Chesseburger ve Patates Kızartması</span> <!-- Cheeseburger -->
+            <span class="item-price">280 TL</span>              <!-- Fiyatı -->
+        </div>
+        <p class="item-desc">150gr ev yapımı köfte, 4 kat cheddar peyniri ve patates kızartması ile.</p> <!-- Açıklama -->
+    </div>
+</div>
+
+</section>
+        <!-- Kategori: Sıcak İçecekler -->
+        <section id="sicak-icecekler" class="menu-category">
+            <h2>Sıcak İçecekler</h2>
+            
+            <div class="menu-item">
+                <img src="resimler/espresso.jpeg" alt="espresso" class="item-img">
+                <div class="item-details">
+                    <div class="item-info">
+                        <span class="item-name">Espresso</span>
+                        <span class="item-price">150TL</span>
+                    </div>
+                    <p class="item-desc">Yoğun ve zengin aromalı klasik İtalyan kahvesi.</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="resimler/latte.jpeg" alt="latte" class="item-img">
+                <div class="item-details">
+                    <div class="item-info">
+                        <span class="item-name">Latte</span>
+                        <span class="item-price">220 TL</span>
+                    </div>
+                    <p class="item-desc">Espresso, sıcak süt ve süt köpüğünün buluşması.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kategori: Soğuk İçecekler -->
+        <section id="soguk-icecekler" class="menu-category">
+            <h2>Soğuk İçecekler</h2>
+            
+            <div class="menu-item">
+                <img src="resimler/limonata.jpeg" alt="Limonata" class="item-img">
+                <div class="item-details">
+                    <div class="item-info">
+                        <span class="item-name">Ev Yapımı Limonata</span>
+                        <span class="item-price">170 TL</span>
+                    </div>
+                    <p class="item-desc">Taze nane ve limon dilimleriyle ferahlatıcı lezzet.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kategori: Tatlılar -->
+        <section id="tatlilar" class="menu-category">
+            <h2>Tatlılar</h2>
+            
+            <div class="menu-item">
+                <img src="resimler/san-sebastian.jpeg" alt="san-sebastian" class="item-img">
+                <div class="item-details">
+                    <div class="item-info">
+                        <span class="item-name">San Sebastian</span>
+                        <span class="item-price">350 TL</span>
+                    </div>
+                    <p class="item-desc">Akışkan kıvamı ve yanık üst dokusu ile özel lezzet.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="menu-footer">
+        <p>Bizi tercih ettiğiniz için teşekkür ederiz.</p>
+    </footer>
+ 
+</body>
+</html>
